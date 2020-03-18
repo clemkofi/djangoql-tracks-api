@@ -93,6 +93,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 #         'HOST': 'localhost',
 #     }
 # }
+# dj_database_url will parse the Database url into its various components
 import dj_database_url
 DATABASES = { 'default': dj_database_url.parse(os.environ['DATABASE_URL']) }
 
