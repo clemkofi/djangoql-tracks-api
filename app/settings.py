@@ -65,7 +65,7 @@ MIDDLEWARE = [
 
 # cors config
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
 ]
@@ -105,6 +105,8 @@ WSGI_APPLICATION = 'app.wsgi.application'
 #         'HOST': 'localhost',
 #     }
 # }
+
+
 # dj_database_url will parse the Database url into its various components
 import dj_database_url
 DATABASES = { 'default': dj_database_url.parse(os.environ['DATABASE_URL']) }
