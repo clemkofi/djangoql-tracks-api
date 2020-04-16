@@ -9,7 +9,7 @@ class UserType(DjangoObjectType):
         model = get_user_model()
         # the only fields property helps to limit the values to be displayed 
         # use field names in db
-        fields = ('id', 'email', 'username', 'password', 'date_joined')
+        # fields = ('id', 'email', 'username', 'password', 'date_joined')
 
 
 # class to handle user creation mutation
